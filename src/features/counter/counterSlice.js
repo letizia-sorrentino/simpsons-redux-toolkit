@@ -26,11 +26,14 @@ export const counterSlice = createSlice({
     incrementByAmount: (state, action) => {
       state.value += action.payload;
     },
-  },
+    setSimposons: (state, action) => {
+      state.simpsons = action.payload;   
+    },
+    },
 
 });
 
-export const { increment, decrement, incrementByAmount } = counterSlice.actions;
+export const { setSimposons, increment, decrement, incrementByAmount } = counterSlice.actions;
 
 export const selectCount = (state) => state.counter.value;
 
