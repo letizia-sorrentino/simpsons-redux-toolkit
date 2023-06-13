@@ -2,7 +2,7 @@
 import Character from "./Character";
 
 const Simpsons = (props) => {
-  const { simpsons, onDelete, onLikeToggle } = props;
+  const { simpsons } = props;
 
   return (
       simpsons.map((item) => {
@@ -10,9 +10,7 @@ const Simpsons = (props) => {
           <Character
             item={item}
             key={item.id}
-            onDelete={onDelete}
-            onLikeToggle={onLikeToggle}
-          />
+            />
         );
       })
   );
