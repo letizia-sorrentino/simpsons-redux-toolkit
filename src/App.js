@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from "react";
+import axios from "axios";
 import Loading from "./features/counter/components/Loading";
 import Controls from "./features/counter/components/Controls";
 import Simpsons from "./features/counter/components/Simpsons";
@@ -18,17 +19,19 @@ const App = () => {
     //get data from API
     const getData = async () => {
         try {
-            const data = await fetch(
+            const {data}= await axios.get(
                 `https://thesimpsonsquoteapi.glitch.me/quotes?count=10`
                 );
             console.log(data);
 
               //fixed the api data to have unique id
-              data.forEach((element, index) => {
+             data.forEach((element, index) => {
                 element.id = index + Math.random();
               });
+              console.log(data);
 
-            const dataAsObject = await data.json();
+            const dataAsObject = data;
+            //await data.json();
             dispatch(setSimpsons(dataAsObject));// now the data is in the store
             console.log(dataAsObject);
         } catch (error) {

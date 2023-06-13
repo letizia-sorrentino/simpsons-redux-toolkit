@@ -22,7 +22,7 @@ export const counterSlice = createSlice({
     incrementByAmount: (state, action) => {
       state.value += action.payload;
     },
-    setSimposons: (state, action) => {
+    setSimpsons: (state, action) => {
       state.simpsons = action.payload;
     },
     setSearchInput: (state, action) => {
