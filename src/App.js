@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import axios from "axios";
 import Loading from "./features/counter/components/Loading";
 import Controls from "./features/counter/components/Controls";

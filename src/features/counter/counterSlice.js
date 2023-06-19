@@ -1,5 +1,5 @@
-import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import { fetchCount } from './counterAPI';
+import { createSlice } from '@reduxjs/toolkit';
+//import { fetchCount } from './counterAPI';
 
 const initialState = {};
 
@@ -48,12 +48,8 @@ export const {
   setSimpsons,
   setSearchInput,
   setLikeInput,
-  increment,
-  decrement,
-  incrementByAmount
 } = counterSlice.actions;
 
-export const selectCount = (state) => state.counter.value;
 export const selectSimpsons = (state) => state.counter.simpsons; //to import in App.js
 export const selectSearchInput = (state) => state.counter.searchInput; //to import in App.js
 export const selectLikeInput = (state) => state.counter.likeInput; //to import in App.js
