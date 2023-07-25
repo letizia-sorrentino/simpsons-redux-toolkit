@@ -94,16 +94,15 @@ const App = () => {
 
   return (
     <>
-    <div className="App"> 
-      <Header />
-      <h1>Simpsons' quotes</h1>
-      <h2 className="mainTitle">Liked Characters #{total}</h2>
-      <Controls onSearchInput={onSearchInput} onLikeInput={onLikeInput} />
-      <Simpsons
-        simpsons={filteredList}
-        deleteItem={deleteItem}
-        toggleLike={toggleLike}
-      />
+      <div className="App">
+        <Header />
+        <h1 className="mainTitle">Liked Characters Counter #{total}</h1>
+        <Controls onSearchInput={onSearchInput} onLikeInput={onLikeInput} />
+        <Simpsons
+          simpsons={filteredList}
+          deleteItem={deleteItem}
+          toggleLike={toggleLike}
+        />
       </div>
     </>
   );

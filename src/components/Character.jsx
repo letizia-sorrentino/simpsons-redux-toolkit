@@ -15,9 +15,7 @@ const Character = (props) => {
       <div className="characterContainer">
         <Name
           character={character}
-          //  togglelike={togglelike}
           id={id}
-          //liked={liked}
         />
         <Quote quote={quote} />
         <Image image={image} />
@@ -25,7 +23,6 @@ const Character = (props) => {
         <div className="buttonContainer">
         <Like liked={liked} id={id} />
         <Delete
-          // deleteItem={deleteItem}
           id={id}
         />
         </div>

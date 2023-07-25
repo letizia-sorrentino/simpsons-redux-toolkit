@@ -4,6 +4,21 @@
     text-align: center;
 }
 
+button {
+    background-color: rgb(243, 201, 31);
+    color: rgb(255, 255, 255);
+    border: rgb(243, 201, 31);
+    border-radius: 1rem;
+    padding: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.loadingContainer {
+    text-align: center;
+}
+
 .App-header {
     height: 30vh;
 }
@@ -17,12 +32,29 @@
     font-size: 1.5rem;
 }
 
-.controls {
+.controlsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.searchBar {
+    border: 0.15rem solid rgb(243, 201, 31);
     border-radius: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.selectButton {
+    background-color: rgb(243, 201, 31);
+    color: rgb(255, 255, 255);
+    border: 0.15rem solid rgb(243, 201, 31);
+    border-radius: 0.5rem;
+    font-weight: 600;
+
 }
 
 .characterContainer {
-    background-color: rgb(255, 255, 224);
+    background-color: rgb(245, 245, 245);
     border-radius: 1rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 1rem;
@@ -43,6 +75,8 @@
 .buttonContainer {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 
 }
