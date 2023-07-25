@@ -1,6 +1,6 @@
 import {useState} from "react";
 import {useDispatch} from "react-redux";
-import {deleteItem} from "../counterSlice";
+import {deleteItem} from "../features/counter/counterSlice";
 
 const Delete = (props) => {
   const { id } = props;

@@ -1,5 +1,5 @@
 import {useDispatch} from "react-redux";
-import {toggleLike} from "../counterSlice";
+import {toggleLike} from "../features/counter/counterSlice";
 
 const Name = (props) => {
   const { liked, character, id } = props;
