@@ -7,7 +7,7 @@ export const counterSlice = createSlice({
   initialState,
   // The `reducers` field lets us define reducers and generate associated actions
   reducers: {
-  
+
     setSimpsons: (state, action) => {
       state.simpsons = action.payload;
     },
@@ -18,7 +18,7 @@ export const counterSlice = createSlice({
     setLikeInput: (state, action) => {
       state.likeInput = action.payload;
     },
-    
+
     // wire up delete button
     deleteItem: (state, action) => {
       const indexOf = state.simpsons.findIndex((char) => {

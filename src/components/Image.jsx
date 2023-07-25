@@ -1,6 +1,6 @@
 const Image = (props) => {
   const { image, character } = props;
-  return <img src={image} alt={character} />;
+  return <img className="characterImage" src={image} alt={character} />;
 };
 
 export default Image;

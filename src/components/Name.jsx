@@ -1,16 +1,17 @@
-import {useDispatch} from "react-redux";
-import {toggleLike} from "../features/counter/counterSlice";
+// import {useDispatch} from "react-redux";
+//import {toggleLike} from "../features/counter/counterSlice";
 
 const Name = (props) => {
-  const { liked, character, id } = props;
-  const dispatch = useDispatch();
+  const {character} = props;
+  // const { liked, character, id } = props;
+  // const dispatch = useDispatch();
 
   return (
     <div>
-      <h1>{character}</h1>
-      <button onClick={() => dispatch(toggleLike(id))}>
+      <h1 className="characterName">{character}</h1>
+      {/* <button onClick={() => dispatch(toggleLike(id))}>
         {liked ? "Liked" : "Not liked"}
-      </button>
+      </button> */}
     </div>
   );
 };

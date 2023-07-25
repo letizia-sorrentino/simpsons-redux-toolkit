@@ -1,4 +1,3 @@
-import {useState} from "react";
 import {useDispatch} from "react-redux";
 import {deleteItem} from "../features/counter/counterSlice";
 

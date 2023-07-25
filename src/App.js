@@ -96,10 +96,9 @@ const App = () => {
     <>
     <div className="App"> 
       <Header />
-      <h1>Total no of liked chars #{total}</h1>
-
+      <h1>Simpsons' quotes</h1>
+      <h2 className="mainTitle">Liked Characters #{total}</h2>
       <Controls onSearchInput={onSearchInput} onLikeInput={onLikeInput} />
-
       <Simpsons
         simpsons={filteredList}
         deleteItem={deleteItem}

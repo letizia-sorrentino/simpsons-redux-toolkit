@@ -1,5 +1,6 @@
 .App {
     margin-left: 2rem;
+    margin-right: 2rem;
     text-align: center;
 }
 
@@ -10,4 +11,38 @@
 .logo {
     height: 100%;
     width: auto;
+}
+
+.mainTitle {
+    font-size: 1.5rem;
+}
+
+.controls {
+    border-radius: 0.5rem;
+}
+
+.characterContainer {
+    background-color: rgb(255, 255, 224);
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.characterName {
+    font-size: 1.5rem;
+}
+
+.characterImage {
+    height: 15rem;
+    width: auto;
+    padding: 0.5rem;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
 }
