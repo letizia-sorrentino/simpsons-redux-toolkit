@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { toggleLike } from "../features/counter/counterSlice";
+import { toggleLike } from "../features/simpsonsManager/simpsonsManagerSlice";
 
 const Like = (props) => {
   const { liked, id } = props;

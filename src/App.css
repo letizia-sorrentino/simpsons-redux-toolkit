@@ -1,7 +1,30 @@
+/* General styles */
 .App {
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin: 0 2rem;
     text-align: center;
+}
+
+.loadingContainer {
+    text-align: center;
+}
+
+.logoContainer {
+    height: 30vh;
+}
+
+.logo {
+    height: 100%;
+    width: auto;
+}
+
+.AppMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainTitle {
+    font-size: 1.5rem;
 }
 
 button {
@@ -15,23 +38,7 @@ button {
     outline: inherit;
 }
 
-.loadingContainer {
-    text-align: center;
-}
-
-.App-header {
-    height: 30vh;
-}
-
-.logo {
-    height: 100%;
-    width: auto;
-}
-
-.mainTitle {
-    font-size: 1.5rem;
-}
-
+/* Controls buttons */
 .controlsContainer {
     display: flex;
     flex-direction: row;
@@ -53,13 +60,15 @@ button {
 
 }
 
+/* Character card */
 .characterContainer {
     background-color: rgb(245, 245, 245);
     border-radius: 1rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 1rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin: 2rem auto;
+    width: 18rem;
+    min-width: 18rem;
 }
 
 .characterName {
@@ -76,7 +85,30 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding: 1rem 0;
+}
 
+/* Media Queries */
+/* screens up to 320px wide */
+@media only screen and (max-width: 320px) {
+    .characterContainer {
+        width: 14rem;
+        max-width: 16rem;
+    }
+}
+
+/* screens larger than 320px wide and up to 768px wide */
+@media only screen and (min-width: 321px) and (max-width:768px) {
+    .characterContainer {
+        width: 18rem;
+        max-width: 18rem;
+    }
+}
+
+/* screens 768px and above */
+@media only screen and (min-width: 769px) {
+    .characterContainer {
+        width: 40rem;
+        max-width: 45rem;
+    }
 }

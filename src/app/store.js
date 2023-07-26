@@ -1,8 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import simpsonsManagerReducer from '../features/simpsonsManager/simpsonsManagerSlice';
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    simpsonsManager: simpsonsManagerReducer,
   },
 });

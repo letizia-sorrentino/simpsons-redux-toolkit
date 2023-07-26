@@ -1,5 +1,5 @@
 import {useDispatch} from "react-redux";
-import {deleteItem} from "../features/counter/counterSlice";
+import {deleteItem} from "../features/simpsonsManager/simpsonsManagerSlice";
 
 const Delete = (props) => {
   const { id } = props;

@@ -2,8 +2,8 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {};
 
-export const counterSlice = createSlice({
-  name: 'counter',
+export const simpsonsManagerSlice = createSlice({
+  name: 'simpsonsManager',
   initialState,
   // The `reducers` field lets us define reducers and generate associated actions
   reducers: {
@@ -47,10 +47,10 @@ export const {
   setSimpsons,
   setSearchInput,
   setLikeInput,
-} = counterSlice.actions;
+} = simpsonsManagerSlice.actions;
 
-export const selectSimpsons = (state) => state.counter.simpsons; //to import in App.js
-export const selectSearchInput = (state) => state.counter.searchInput; //to import in App.js
-export const selectLikeInput = (state) => state.counter.likeInput; //to import in App.js
+export const selectSimpsons = (state) => state.simpsonsManager.simpsons; //to import in App.js
+export const selectSearchInput = (state) => state.simpsonsManager.searchInput; //to import in App.js
+export const selectLikeInput = (state) => state.simpsonsManager.likeInput; //to import in App.js
 
-export default counterSlice.reducer;
+export default simpsonsManagerSlice.reducer;

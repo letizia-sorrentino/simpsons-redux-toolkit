@@ -5,7 +5,7 @@ import Header from './components/Header'
 import Loading from "./components/Loading";
 import Controls from "./components/Controls";
 import Simpsons from "./components/Simpsons";
-import { setSimpsons, selectSimpsons, selectSearchInput, selectLikeInput, setSearchInput, setLikeInput, deleteItem, toggleLike } from "./features/counter/counterSlice";
+import { setSimpsons, selectSimpsons, selectSearchInput, selectLikeInput, setSearchInput, setLikeInput, deleteItem, toggleLike } from "./features/simpsonsManager/simpsonsManagerSlice";
 import { useDispatch, useSelector } from 'react-redux';
 import "./App.css";
 
@@ -95,14 +95,18 @@ const App = () => {
   return (
     <>
       <div className="App">
+       <div className="AppHeader"> 
         <Header />
         <h1 className="mainTitle">Liked Characters Counter #{total}</h1>
         <Controls onSearchInput={onSearchInput} onLikeInput={onLikeInput} />
+        </div>
+        <div className="AppMain"> 
         <Simpsons
           simpsons={filteredList}
           deleteItem={deleteItem}
           toggleLike={toggleLike}
         />
+      </div>
       </div>
     </>
   );
