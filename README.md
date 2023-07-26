@@ -9,7 +9,7 @@ To further enhance the user experience, the user has the ability to like/unlike 
 The app also includes a counter that showcases the number of liked characters.
 
 ## Live Preview
-[Live Preview](https://64c0db04ff0b953f9e57e4e6--glowing-druid-27993b.netlify.app/).
+[The Simpsons Quote App](https://64c0db04ff0b953f9e57e4e6--glowing-druid-27993b.netlify.app/)
 
 ## Technogies used :computer:
 - [Create React App](https://github.com/facebook/create-react-app);
@@ -19,10 +19,6 @@ The app also includes a counter that showcases the number of liked characters.
 - [Canva](https://www.canva.com/en_gb/) for logos and colour palette;
 
 ### Available Scripts :open_file_folder:
-In the project directory, you can run: `npm run dev` to open the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+In the project directory, you can run: `npm run dev` to open the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ![Alt Text](src/assets/Simpsons-screenshot.png)
