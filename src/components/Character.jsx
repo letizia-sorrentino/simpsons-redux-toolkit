@@ -1,5 +1,3 @@
-/* eslint-disable react/prop-types */
-//import { deleteItem, toggleLike } from "../counterSlice";
 import Name from "./Name";
 import Quote from "./Quote";
 import Image from "./Image";
@@ -13,41 +11,27 @@ const Character = (props) => {
   if (characterDirection === "Left") {
     return (
       <div className="characterContainer">
-        <Name
-          character={character}
-          id={id}
-        />
+        <Name character={character} id={id} />
         <Quote quote={quote} />
         <Image image={image} />
-       
+
         <div className="buttonContainer">
-        <Like liked={liked} id={id} />
-        <Delete
-          id={id}
-        />
+          <Like liked={liked} id={id} />
+          <Delete id={id} />
         </div>
       </div>
-
     );
   }
 
   return (
     <div className="characterContainer">
-      <Name
-        character={character}
-        // togglelike={togglelike}
-        id={id}
-        //liked={liked}
-      />
+      <Name character={character} id={id} />
       <Quote quote={quote} />
       <Image image={image} />
 
       <div className="buttonContainer">
         <Like liked={liked} id={id} />
-        <Delete
-          //deleteItem={deleteItem}
-          id={id}
-        />
+        <Delete id={id} />
       </div>
     </div>
   );

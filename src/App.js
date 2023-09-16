@@ -95,18 +95,19 @@ const App = () => {
   return (
     <>
       <div className="App">
-       <div className="AppHeader"> 
-        <Header />
-        <h1 className="mainTitle">Liked Characters Counter #{total}</h1>
-        <Controls onSearchInput={onSearchInput} onLikeInput={onLikeInput} />
+        <div className="AppHeader">
+          <Header />
+          <h1 className="mainTitle">Liked Characters Counter #{total}</h1>
+          <Controls onSearchInput={onSearchInput} onLikeInput={onLikeInput} />
         </div>
-        <div className="AppMain"> 
-        <Simpsons
-          simpsons={filteredList}
-          deleteItem={deleteItem}
-          toggleLike={toggleLike}
-        />
-      </div>
+        <div className="AppMain">
+          <div className="charactersCardsContainer">
+            <Simpsons
+              simpsons={filteredList}
+              deleteItem={deleteItem}
+              toggleLike={toggleLike}
+            /> </div>
+        </div>
       </div>
     </>
   );
