@@ -33,6 +33,7 @@ button {
     border: rgb(243, 201, 31);
     border-radius: 1rem;
     padding: 0.5rem;
+    margin: 0.5rem;
     font-weight: 600;
     cursor: pointer;
     outline: inherit;
@@ -67,8 +68,12 @@ button {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 1rem;
     margin: 2rem auto;
-    width: 18rem;
     min-width: 18rem;
+    min-height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .characterName {
@@ -76,8 +81,8 @@ button {
 }
 
 .characterImage {
-    height: 15rem;
-    width: auto;
+    height: 50%;
+    width: 50%;
     padding: 0.5rem;
 }
 
@@ -85,7 +90,7 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding: 1rem 0;
+    padding: 1rem;
 }
 
 /* Media Queries */
@@ -110,9 +115,19 @@ button {
         flex-wrap: wrap;
         justify-content: space-evenly;
         max-width: 100vw;
+        padding-bottom: 6rem;
 
     }
 }
 
 /* screens 768px and above */
-@media only screen and (min-width: 769px) {}
+@media only screen and (min-width: 769px) {
+
+    .controlsContainer {
+        padding-bottom: 6rem;
+    }
+
+    .characterContainer {
+        margin: 1rem;
+    }
+}
